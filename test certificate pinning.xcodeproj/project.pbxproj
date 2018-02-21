@@ -12,6 +12,9 @@
 		9C413522203DC55900EBB481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C413520203DC55900EBB481 /* Main.storyboard */; };
 		9C413524203DC55900EBB481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C413523203DC55900EBB481 /* Assets.xcassets */; };
 		9C413527203DC55900EBB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C413525203DC55900EBB481 /* LaunchScreen.storyboard */; };
+		9C41352F203DC6C500EBB481 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41352E203DC6C500EBB481 /* NetworkManager.swift */; };
+		9C413530203DC70D00EBB481 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C413532203DC70D00EBB481 /* Alamofire.framework */; };
+		9C413531203DC70D00EBB481 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C413533203DC70D00EBB481 /* SwiftyJSON.framework */; };
 		DCE68DB99E6877B0E3CA9AFD /* Pods_test_certificate_pinning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80EF47E2A056700E83E238C /* Pods_test_certificate_pinning.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,10 @@
 		9C413523203DC55900EBB481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C413526203DC55900EBB481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C413528203DC55900EBB481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C41352E203DC6C500EBB481 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9C413532203DC70D00EBB481 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C413533203DC70D00EBB481 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C413534203DC91800EBB481 /* www.apple.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = www.apple.com.cer; sourceTree = "<group>"; };
 		F456B7C2247C9D2F9C0C7EF5 /* Pods-test certificate pinning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test certificate pinning.release.xcconfig"; path = "Pods/Target Support Files/Pods-test certificate pinning/Pods-test certificate pinning.release.xcconfig"; sourceTree = "<group>"; };
 		F80EF47E2A056700E83E238C /* Pods_test_certificate_pinning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_certificate_pinning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -33,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C413530203DC70D00EBB481 /* Alamofire.framework in Frameworks */,
+				9C413531203DC70D00EBB481 /* SwiftyJSON.framework in Frameworks */,
 				DCE68DB99E6877B0E3CA9AFD /* Pods_test_certificate_pinning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +76,8 @@
 				9C413523203DC55900EBB481 /* Assets.xcassets */,
 				9C413525203DC55900EBB481 /* LaunchScreen.storyboard */,
 				9C413528203DC55900EBB481 /* Info.plist */,
+				9C41352E203DC6C500EBB481 /* NetworkManager.swift */,
+				9C413534203DC91800EBB481 /* www.apple.com.cer */,
 			);
 			path = "test certificate pinning";
 			sourceTree = "<group>";
@@ -83,6 +94,8 @@
 		DD6B750BC9678DF344D7F031 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C413532203DC70D00EBB481 /* Alamofire.framework */,
+				9C413533203DC70D00EBB481 /* SwiftyJSON.framework */,
 				F80EF47E2A056700E83E238C /* Pods_test_certificate_pinning.framework */,
 			);
 			name = Frameworks;
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C41352F203DC6C500EBB481 /* NetworkManager.swift in Sources */,
 				9C41351F203DC55900EBB481 /* ViewController.swift in Sources */,
 				9C41351D203DC55900EBB481 /* AppDelegate.swift in Sources */,
 			);
