@@ -15,6 +15,7 @@
 		9C41352F203DC6C500EBB481 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41352E203DC6C500EBB481 /* NetworkManager.swift */; };
 		9C413530203DC70D00EBB481 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C413532203DC70D00EBB481 /* Alamofire.framework */; };
 		9C413531203DC70D00EBB481 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C413533203DC70D00EBB481 /* SwiftyJSON.framework */; };
+		9C41353C203DCDB100EBB481 /* uslinkedincom.crt in Resources */ = {isa = PBXBuildFile; fileRef = 9C41353B203DCDB000EBB481 /* uslinkedincom.crt */; };
 		DCE68DB99E6877B0E3CA9AFD /* Pods_test_certificate_pinning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80EF47E2A056700E83E238C /* Pods_test_certificate_pinning.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,13 @@
 		9C413532203DC70D00EBB481 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C413533203DC70D00EBB481 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C413534203DC91800EBB481 /* www.apple.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = www.apple.com.cer; sourceTree = "<group>"; };
+		9C413536203DCC9A00EBB481 /* wwwapplecom.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = wwwapplecom.crt; sourceTree = "<group>"; };
+		9C413538203DCCCF00EBB481 /* incapsulacom.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = incapsulacom.crt; sourceTree = "<group>"; };
+		9C413539203DCCCF00EBB481 /* *googlecom.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "*googlecom.crt"; sourceTree = "<group>"; };
+		9C41353A203DCDAC00EBB481 /* us.linkedin.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = us.linkedin.com.cer; sourceTree = "<group>"; };
+		9C41353B203DCDB000EBB481 /* uslinkedincom.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uslinkedincom.crt; sourceTree = "<group>"; };
+		9C41353D203DCDF600EBB481 /* incapsula.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = incapsula.com.cer; sourceTree = "<group>"; };
+		9C41353E203DCDF600EBB481 /* *.google.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "*.google.com.cer"; sourceTree = "<group>"; };
 		F456B7C2247C9D2F9C0C7EF5 /* Pods-test certificate pinning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test certificate pinning.release.xcconfig"; path = "Pods/Target Support Files/Pods-test certificate pinning/Pods-test certificate pinning.release.xcconfig"; sourceTree = "<group>"; };
 		F80EF47E2A056700E83E238C /* Pods_test_certificate_pinning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_certificate_pinning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +85,13 @@
 				9C413525203DC55900EBB481 /* LaunchScreen.storyboard */,
 				9C413528203DC55900EBB481 /* Info.plist */,
 				9C41352E203DC6C500EBB481 /* NetworkManager.swift */,
+				9C41353B203DCDB000EBB481 /* uslinkedincom.crt */,
+				9C41353A203DCDAC00EBB481 /* us.linkedin.com.cer */,
+				9C413539203DCCCF00EBB481 /* *googlecom.crt */,
+				9C41353E203DCDF600EBB481 /* *.google.com.cer */,
+				9C413538203DCCCF00EBB481 /* incapsulacom.crt */,
+				9C41353D203DCDF600EBB481 /* incapsula.com.cer */,
+				9C413536203DCC9A00EBB481 /* wwwapplecom.crt */,
 				9C413534203DC91800EBB481 /* www.apple.com.cer */,
 			);
 			path = "test certificate pinning";
@@ -164,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C413527203DC55900EBB481 /* LaunchScreen.storyboard in Resources */,
+				9C41353C203DCDB100EBB481 /* uslinkedincom.crt in Resources */,
 				9C413524203DC55900EBB481 /* Assets.xcassets in Resources */,
 				9C413522203DC55900EBB481 /* Main.storyboard in Resources */,
 			);
@@ -373,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3THQDJ45;
+				DEVELOPMENT_TEAM = L37UQ6NGZG;
 				INFOPLIST_FILE = "test certificate pinning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.antoniochiappetta.test-certificate-pinning";
@@ -389,7 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3THQDJ45;
+				DEVELOPMENT_TEAM = L37UQ6NGZG;
 				INFOPLIST_FILE = "test certificate pinning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.antoniochiappetta.test-certificate-pinning";

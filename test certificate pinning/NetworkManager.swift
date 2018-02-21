@@ -21,7 +21,7 @@ class NetworkManager {
             delegate: SessionDelegate(),
             serverTrustPolicyManager: ServerTrustPolicyManager(policies:
                 [
-                    "www.apple.com": ServerTrustPolicy.pinCertificates(
+                    "it.linkedin.com": ServerTrustPolicy.pinCertificates(
                         certificates: ServerTrustPolicy.certificates(),
                         validateCertificateChain: true,
                         validateHost: true
@@ -29,10 +29,14 @@ class NetworkManager {
                 ]
             )
         )
+        // Check if the certificates found among the app resources (currently there are 4 certificates exported in DER format and with both .cer and .crt extension) are converted into SecCertificate
+        // If the array is empty, no certificate has been converted (i.e. none of them will be used for certificate pinning against server certificate)
+        let certs = ServerTrustPolicy.certificates()
+        print(certs)
     }
     
     func connectToApple() {
-        afManager.request("www.apple.com", method: .get, parameters: [:], encoding: JSONEncoding.default, headers: nil).responseJSON { (dataResponse) in
+        afManager.request("it.linkedin.com", method: .get, parameters: [:], encoding: JSONEncoding.default, headers: nil).responseJSON { (dataResponse) in
             if let error = dataResponse.error {
                 print(error)
             }
